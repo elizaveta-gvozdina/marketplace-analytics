@@ -6,7 +6,7 @@ Fecom Inc. is a fictional e-commerce marketplace company based in Berlin, German
 - License: CC BY-NC-SA 4.0
 
 ## Contact
-**Project author:**  Elizaveta Gvozdina
-**Email:** lisagvozdina@gmail.com
-**Phone**: +44 7874 755842
+**Project author:**  Elizaveta Gvozdina<br>
+**Email:** lisagvozdina@gmail.com<br>
+**Phone**: +44 7874 755842<br>
 
