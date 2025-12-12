@@ -27,7 +27,6 @@ Main points of this script:
 This script does not insert any data. Its purpose is to define the structure of the
 database, enforce integrity rules, and prepare the database for loading data
 in separate scripts.    
-================================================================================
 */
 
 --Drop and recreate the public schema (resets the database)

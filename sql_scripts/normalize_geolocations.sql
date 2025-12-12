@@ -11,7 +11,6 @@ Purpose:
    - Normalize geolocations and related tables (towards 3NF)
    - Remove data redundancy
    - Ensure consistency and improve query performance
-================================================================================
 */
 
 --ROLLBACK;
