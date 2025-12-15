@@ -1,17 +1,5 @@
 # E-commerce Analytics Case Study
 
-## Table of Contents
-
-[Business Context](#business-context)
-[Business Objectives](#business-objectives)
-[Methodology](#methodology)
-[Data Model](#data-model)
-[Insights](#insights)
-[Dataset](#dataset)
-[Next Steps](#next-steps)
-[How to Use](#how-to-use)
-[Contact](#contact)
-
 ## Business Context
 Fecom Inc. is a growing e-commerce marketplace connecting sellers with a broad customer base. Daily orders, shipments, and customer interactions generate substantial data, but it is stored across multiple tables without a unified view.
 
@@ -22,6 +10,18 @@ As a result:
 - Delivery and fulfillment bottlenecks are not easily detected
 
 This project consolidates these datasets into a single analytical dashboard, providing a year-to-date view benchmarked against the previous year, enabling actionable insights for revenue, product assortment, seller management, customer engagement, and operational efficiency.
+
+## Table of Contents
+
+[Business Context](#business-context)<br>
+[Business Objectives](#business-objectives)<br>
+[Methodology](#methodology)<br>
+[Data Model](#data-model)<br>
+[Insights](#insights)<br>
+[Dataset](#dataset)<br>
+[Next Steps](#next-steps)<br>
+[How to Use](#how-to-use)<br>
+[Contact](#contact)<br> 
 
 ## Business Objectives
 - Provide a clear, consolidated view of year-to-date performance, highlighting trends in revenue, customer behavior, and operational metrics  
