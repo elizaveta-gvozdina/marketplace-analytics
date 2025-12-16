@@ -11,6 +11,9 @@ As a result:
 
 This project consolidates these datasets into a single analytical dashboard, providing a year-to-date view benchmarked against the previous year, enabling actionable insights for revenue, product assortment, seller management, customer engagement, and operational efficiency.
 
+## ## Project Stack
+PostgreSQL | Power BI | DAX | Python | Jupyter | Pandas
+
 ## Table of Contents
 
 [Business Objectives](#business-objectives)<br>
@@ -29,6 +32,13 @@ This project consolidates these datasets into a single analytical dashboard, pro
 - Detect bottlenecks in delivery and fulfillment to improve efficiency and customer satisfaction  
 - Deliver actionable insights that inform strategic initiatives with measurable impact
 
+## Methodology
+### ETL / Data Cleaning
+The raw data from the source datasets is ingested and cleaned using the following scripts:
+
+- [Data Preprocessing Notebook](./elt_scripts/Data Preprocessing.ipynb) — checks for missing or duplicate values and corrects formatting issues.
+- [ELT Pipeline](./elt_scripts/ELT_pipeline.py) — automates data ingestion, normalization, and storage in PostgreSQL.
+
 ## Data Model
 The project uses different data models across layers to balance storage efficiency and analytical usability:
 
@@ -45,7 +55,6 @@ The star-schema data model implemented in Power BI is illustrated here:
 ![Power BI Star Schema](./ERD/powerbi_model.png)
 
 This setup optimizes data storage in PostgreSQL while keeping analytical queries and reporting in Power BI clear, performant, and easy to maintain.
-
 
 ## Dataset
 - Fecom Inc. is a fictional e-commerce marketplace company based in Berlin, Germany. Between 2022 and 2024, it recorded 99 441 orders from 102 727 unique customers and tracked all commercial transactions of 3 095 sellers.
