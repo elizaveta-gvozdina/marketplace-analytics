@@ -39,10 +39,10 @@ The project uses different data models across layers to balance storage efficien
      A star schema with multiple fact tables at different grains is implemented to simplify relationships, filtering, and measure calculations. Power BI uses the VertiPaq engine, which stores data in a highly compressed, columnar format. This makes star schemas with clear fact-dimension relationships extremely fast for aggregations and slicers.
 
 The Entity-Relationship Diagram (ERD) of the PostgreSQL database can be viewed below:  
-![PostgreSQL ERD](./images/ERD_normalized.png)  
+![PostgreSQL ERD](./ERD/ERD_normalized.png)  
 
 The star-schema data model implemented in Power BI is illustrated here:  
-![Power BI Star Schema](./images/powerbi_model.png)
+![Power BI Star Schema](./ERD/powerbi_model.png)
 
 This setup optimizes data storage in PostgreSQL while keeping analytical queries and reporting in Power BI clear, performant, and easy to maintain.
 
