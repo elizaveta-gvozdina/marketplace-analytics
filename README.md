@@ -11,19 +11,19 @@ As a result:
 
 This project consolidates these datasets into a single analytical dashboard, providing a year-to-date view benchmarked against the previous year, enabling actionable insights for revenue, product assortment, seller management, customer engagement, and operational efficiency.
 
-## ## Project Stack
+## Project Stack
 PostgreSQL | Power BI | DAX | Python | Jupyter | Pandas
 
 ## Table of Contents
-
-[Business Objectives](#business-objectives)<br>
-[Methodology](#methodology)<br>
-[Data Model](#data-model)<br>
-[Insights](#insights)<br>
-[Dataset](#dataset)<br>
-[Next Steps](#next-steps)<br>
-[How to Use](#how-to-use)<br>
-[Contact](#contact)<br> 
+- [Business Objectives](#business-objectives)<br>
+- [Methodology](#methodology)<br>
+- [Data Model](#data-model)<br>
+- [Insights](#insights)<br>
+- [Dataset](#dataset)<br>
+- [Next Steps](#next-steps)<br>
+- [How to Use](#how-to-use)<br>
+- [Limitations](#limitations)<br>
+- [Contact](#contact)<br> 
 
 ## Business Objectives
 - Provide a clear, consolidated view of year-to-date performance, highlighting trends in revenue, customer behavior, and operational metrics  
@@ -36,7 +36,7 @@ PostgreSQL | Power BI | DAX | Python | Jupyter | Pandas
 ### ETL / Data Cleaning
 The raw data from the source datasets is ingested and cleaned using the following scripts:
 
-- [Data Preprocessing Notebook](./elt_scripts/Data Preprocessing.ipynb) — checks for missing or duplicate values and corrects formatting issues.
+- [Data Preprocessing Notebook](./elt_scripts/data_preprocessing.ipynb) — checks for missing or duplicate values and corrects formatting issues.
 - [ELT Pipeline](./elt_scripts/ELT_pipeline.py) — automates data ingestion, normalization, and storage in PostgreSQL.
 
 ## Data Model
@@ -49,10 +49,10 @@ The project uses different data models across layers to balance storage efficien
      A star schema with multiple fact tables at different grains is implemented to simplify relationships, filtering, and measure calculations. Power BI uses the VertiPaq engine, which stores data in a highly compressed, columnar format. This makes star schemas with clear fact-dimension relationships extremely fast for aggregations and slicers.
 
 The Entity-Relationship Diagram (ERD) of the PostgreSQL database can be viewed below:  
-![PostgreSQL ERD](./ERD/ERD_normalized.png)  
+[PostgreSQL ERD](./ERD/ERD_normalized.png)  
 
 The star-schema data model implemented in Power BI is illustrated here:  
-![Power BI Star Schema](./ERD/powerbi_model.png)
+[Power BI Star Schema](./ERD/powerbi_model.png)
 
 This setup optimizes data storage in PostgreSQL while keeping analytical queries and reporting in Power BI clear, performant, and easy to maintain.
 
@@ -60,6 +60,14 @@ This setup optimizes data storage in PostgreSQL while keeping analytical queries
 - Fecom Inc. is a fictional e-commerce marketplace company based in Berlin, Germany. Between 2022 and 2024, it recorded 99 441 orders from 102 727 unique customers and tracked all commercial transactions of 3 095 sellers.
 - Source: [Kaggle — Fecom Inc. e-commerce orders](https://www.kaggle.com/datasets/cemeraan/fecom-inc-e-com-marketplace-orders-data-crm/data)
 - License: CC BY-NC-SA 4.0
+- Collection Methodology: Random Sampling + Market and Company Research Report Results about e-Com[Specific confidential company]
+
+## Limitations
+- Temporal coverage is limited to 2022–2024, preventing reliable estimation of long-term trends and seasonality.
+- Returns and refunds data is not available, preventing net revenue and return rate analysis.
+- Customer acquisition and funnel data is not available, limiting conversion analysis beyond completed and cancelled orders.
+- Planned sales targets or budget benchmarks are not available; performance evaluation relies on year-over-year comparisons.
+
 
 ## Contact
 **Project author:**  Elizaveta Gvozdina<br>
