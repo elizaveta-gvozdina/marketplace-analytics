@@ -19,9 +19,9 @@ PostgreSQL | Power BI | DAX | Python | Jupyter | Pandas
 - [Methodology](#methodology)<br>
 - [Data Model](#data-model)<br>
 - [Insights](#insights)<br>
-- [Dataset](#dataset)<br>
 - [Next Steps](#next-steps)<br>
 - [How to Use](#how-to-use)<br>
+- [Dataset](#dataset)<br>
 - [Limitations](#limitations)<br>
 - [Contact](#contact)<br> 
 
