@@ -12,7 +12,7 @@ As a result:
 This project consolidates these datasets into a single analytical dashboard, providing a year-to-date view benchmarked against the previous year, enabling actionable insights for revenue, product assortment, seller management, customer engagement, and operational efficiency.
 
 ## Project Stack
-PostgreSQL | Power BI | DAX | Python | Jupyter | Pandas
+PostgreSQL | SQL | Python (Pandas, NumPy, scikit-learn) | Jupyter Notebook | Power BI (DAX) | RFM Analysis
 
 ## Table of Contents
 - [Business Objectives](#business-objectives)<br>
