@@ -62,6 +62,24 @@ This setup optimizes data storage in PostgreSQL while keeping analytical queries
 - License: CC BY-NC-SA 4.0
 - Collection Methodology: Random Sampling + Market and Company Research Report Results about e-Com[Specific confidential company]
 
+## Customer Segmentation with RFM & K-Means
+[See detailed analysis here](./rfm_clustering_analysis/RFM_segmentation_with_KMeans.ipynb)
+
+This is part of the Fecom Inc. analytics project. Customers are segmented using RFM (Recency, Frequency, Monetary) metrics and K-Means clustering to identify patterns in purchasing behavior and support targeted marketing and retention strategies.
+
+→ [See segment-level business recommendations here](./rfm_clustering_analysis/customer_segment_recommendations_report.pdf)
+
+**Key Results:**
+- Customers grouped into meaningful segments based on recency, frequency, and spending, producing a clear, stable, and business-actionable customer segmentation framework.
+- Six distinct customer segments identified: Recent Low Spenders, Recent High Spenders, Inactive Low Spenders, Inactive High Spenders, Loyal High Spenders, and VIP Spenders, enabling differentiated retention and monetization strategies.
+- **High churn risk quantified**: ~97% of customers made only one purchase, confirming low retention as a core business challenge and validating the need for lifecycle-based marketing strategies
+- **Robust clustering achieved**: 5-cluster solution validated via Elbow Method and Silhouette Score; cluster stability confirmed with a mean Adjusted Rand Index (ARI) of 0.97 across multiple runs.
+- **Outlier handling improved model quality**: Top 0.5% spenders isolated as VIPs to prevent distortion of K-Means centroids and improve interpretability.
+- **Production-ready output delivered**: Clean customer-level segmentation exported to CSV, with clear business-ready fields and structure suitable for direct integration into Power BI dashboards.
+- **Clear business actions defined**: Each segment mapped to prioritized, time-phased actions (quick wins, mid-term, long-term) with measurable KPIs to support churn reduction and CLV growth. 
+
+
+
 ## Limitations
 - Temporal coverage is limited to 2022–2024, preventing reliable estimation of long-term trends and seasonality.
 - Returns and refunds data is not available, preventing net revenue and return rate analysis.
