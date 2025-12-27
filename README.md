@@ -11,6 +11,10 @@ As a result:
 
 This project consolidates these datasets into a single analytical dashboard, providing a year-to-date view benchmarked against the previous year, enabling actionable insights for revenue, product assortment, seller management, customer engagement, and operational efficiency.
 
+## 🚀 Interactive Dashboard
+[View the Dashboard →](https://app.powerbi.com/view?r=eyJrIjoiNWRiMGE5YzQtMzczZC00NzgwLTgyMGMtMzlhMGM3Y2I1MTkyIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2)
+> Click to open the live dashboard. Detailed page-by-page descriptions and screenshots are provided [below](#dashboard-details).
+
 ## Project Stack
 PostgreSQL | SQL | Python (Pandas, NumPy, scikit-learn) | Jupyter Notebook | Power BI (DAX) | RFM Analysis
 
@@ -18,6 +22,7 @@ PostgreSQL | SQL | Python (Pandas, NumPy, scikit-learn) | Jupyter Notebook | Pow
 - [Business Objectives](#business-objectives)<br>
 - [Methodology](#methodology)<br>
 - [Data Model](#data-model)<br>
+- [Dashboard Details](#dashboard-details)<br>
 - [Insights](#insights)<br>
 - [Next Steps](#next-steps)<br>
 - [How to Use](#how-to-use)<br>
