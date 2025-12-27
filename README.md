@@ -22,6 +22,7 @@ PostgreSQL | SQL | Python (Pandas, NumPy, scikit-learn) | Jupyter Notebook | Pow
 - [Next Steps](#next-steps)<br>
 - [How to Use](#how-to-use)<br>
 - [Dataset](#dataset)<br>
+- [Customer Segmentation with RFM and K-Means](#customer-segmentation-with-rfm-and-k-means)<br>
 - [Limitations](#limitations)<br>
 - [Contact](#contact)<br> 
 
@@ -49,10 +50,10 @@ The project uses different data models across layers to balance storage efficien
      A star schema with multiple fact tables at different grains is implemented to simplify relationships, filtering, and measure calculations. Power BI uses the VertiPaq engine, which stores data in a highly compressed, columnar format. This makes star schemas with clear fact-dimension relationships extremely fast for aggregations and slicers.
 
 The Entity-Relationship Diagram (ERD) of the PostgreSQL database can be viewed below:  
-[PostgreSQL ERD](./ERD/ERD_normalized.png)  
+→ [PostgreSQL ERD](./ERD/ERD_normalized.png)  
 
 The star-schema data model implemented in Power BI is illustrated here:  
-[Power BI Star Schema](./ERD/powerbi_model.png)
+→ [Power BI Star Schema](./ERD/powerbi_model.png)
 
 This setup optimizes data storage in PostgreSQL while keeping analytical queries and reporting in Power BI clear, performant, and easy to maintain.
 
@@ -62,8 +63,8 @@ This setup optimizes data storage in PostgreSQL while keeping analytical queries
 - License: CC BY-NC-SA 4.0
 - Collection Methodology: Random Sampling + Market and Company Research Report Results about e-Com[Specific confidential company]
 
-## Customer Segmentation with RFM & K-Means
-[See detailed analysis here](./rfm_clustering_analysis/RFM_segmentation_with_KMeans.ipynb)
+## Customer Segmentation with RFM and K-Means
+→ [See detailed analysis here](./rfm_clustering_analysis/RFM_segmentation_with_KMeans.ipynb)
 
 This is part of the Fecom Inc. analytics project. Customers are segmented using RFM (Recency, Frequency, Monetary) metrics and K-Means clustering to identify patterns in purchasing behavior and support targeted marketing and retention strategies.
 
@@ -83,7 +84,7 @@ This is part of the Fecom Inc. analytics project. Customers are segmented using 
 ## Limitations
 - Temporal coverage is limited to 2022–2024, preventing reliable estimation of long-term trends and seasonality.
 - Returns and refunds data is not available, preventing net revenue and return rate analysis.
-- Customer acquisition and funnel data is not available, limiting conversion analysis beyond completed and cancelled orders.
+- Customer acquisition and funnel data is not available, preventing analysis of conversion efficiency and customer acquisition cost (CAC) beyond completed and cancelled orders.
 - Planned sales targets or budget benchmarks are not available; performance evaluation relies on year-over-year comparisons.
 
 
