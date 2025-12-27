@@ -3,7 +3,7 @@
 ## Business Context
 Fecom Inc. is a growing e-commerce marketplace connecting sellers with a broad customer base. Daily orders, shipments, and customer interactions generate substantial data, but it is stored across multiple tables without a unified view.
 
-As a result:  
+❌As a result:  
 - Revenue, product, and seller performance are hard to monitor  
 - Customer behavior and retention patterns are difficult to analyze  
 - KPIs are inconsistent, making benchmarking challenging
@@ -11,11 +11,12 @@ As a result:
 
 This project consolidates these datasets into a single analytical dashboard, providing a year-to-date view benchmarked against the previous year, enabling actionable insights for revenue, product assortment, seller management, customer engagement, and operational efficiency.
 
-## 🚀 Interactive Dashboard
-[View the Dashboard →](https://app.powerbi.com/view?r=eyJrIjoiNWRiMGE5YzQtMzczZC00NzgwLTgyMGMtMzlhMGM3Y2I1MTkyIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2)
-> Click to open the live dashboard. Detailed page-by-page descriptions and screenshots are provided [below](#dashboard-details).
+Additionally, this project incorporates RFM-based customer segmentation with K-Means clustering to identify high-value, loyal, and at-risk customers, uncover retention opportunities, and support targeted, data-driven campaigns.
 
-## Project Stack
+## 🚀 Interactive Dashboard
+[View the Dashboard →](https://app.powerbi.com/view?r=eyJrIjoiNWRiMGE5YzQtMzczZC00NzgwLTgyMGMtMzlhMGM3Y2I1MTkyIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2) - Click to open the live dashboard. Detailed page-by-page descriptions and screenshots are provided [below](#dashboard-details).
+
+## 🛠️Project Stack
 PostgreSQL | SQL | Python (Pandas, NumPy, scikit-learn) | Jupyter Notebook | Power BI (DAX) | RFM Analysis
 
 ## Table of Contents
@@ -26,8 +27,8 @@ PostgreSQL | SQL | Python (Pandas, NumPy, scikit-learn) | Jupyter Notebook | Pow
 - [Insights](#insights)<br>
 - [Next Steps](#next-steps)<br>
 - [How to Use](#how-to-use)<br>
-- [Dataset](#dataset)<br>
 - [Customer Segmentation with RFM and K-Means](#customer-segmentation-with-rfm-and-k-means)<br>
+- [Dataset](#dataset)<br>
 - [Limitations](#limitations)<br>
 - [Contact](#contact)<br> 
 
@@ -62,12 +63,6 @@ The star-schema data model implemented in Power BI is illustrated here:
 
 This setup optimizes data storage in PostgreSQL while keeping analytical queries and reporting in Power BI clear, performant, and easy to maintain.
 
-## Dataset
-- Fecom Inc. is a fictional e-commerce marketplace company based in Berlin, Germany. Between 2022 and 2024, it recorded 99 441 orders from 102 727 unique customers and tracked all commercial transactions of 3 095 sellers.
-- Source: [Kaggle — Fecom Inc. e-commerce orders](https://www.kaggle.com/datasets/cemeraan/fecom-inc-e-com-marketplace-orders-data-crm/data)
-- License: CC BY-NC-SA 4.0
-- Collection Methodology: Random Sampling + Market and Company Research Report Results about e-Com[Specific confidential company]
-
 ## Customer Segmentation with RFM and K-Means
 → [See detailed analysis here](./rfm_clustering_analysis/RFM_segmentation_with_KMeans.ipynb)
 
@@ -84,6 +79,11 @@ This is part of the Fecom Inc. analytics project. Customers are segmented using 
 - **Production-ready output delivered**: Clean customer-level segmentation exported to CSV, with clear business-ready fields and structure suitable for direct integration into Power BI dashboards.
 - **Clear business actions defined**: Each segment mapped to prioritized, time-phased actions (quick wins, mid-term, long-term) with measurable KPIs to support churn reduction and CLV growth. 
 
+## Dataset
+- Fecom Inc. is a fictional e-commerce marketplace company based in Berlin, Germany. Between 2022 and 2024, it recorded 99 441 orders from 102 727 unique customers and tracked all commercial transactions of 3 095 sellers.
+- Source: [Kaggle — Fecom Inc. e-commerce orders](https://www.kaggle.com/datasets/cemeraan/fecom-inc-e-com-marketplace-orders-data-crm/data)
+- License: CC BY-NC-SA 4.0
+- Collection Methodology: Random Sampling + Market and Company Research Report Results about e-Com[Specific confidential company]
 
 
 ## Limitations
