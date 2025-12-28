@@ -1,5 +1,4 @@
 # E-commerce Analytics Case Study
-![dashboard_page_1_revenue](./dashboard/dashboard_page_1_revenue.png)
 ## Business Context
 Fecom Inc. is a growing e-commerce marketplace connecting sellers with a broad customer base. Daily orders, shipments, and customer interactions generate substantial data, but it is stored across multiple tables without a unified view.
 
@@ -14,12 +13,12 @@ This project consolidates these datasets into a single analytical dashboard, pro
 Additionally, this project incorporates RFM-based customer segmentation with K-Means clustering to identify high-value, loyal, and at-risk customers, uncover retention opportunities, and support targeted, data-driven campaigns.
 
 ## 🚀 Interactive Dashboard
-Click to open the live Power BI dashboard → [View the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiN2Q1MTNlOTYtNjE3YS00YWNjLWJjZWYtMTcyZDRmMTE0MTgzIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2)<br>
- Detailed page-by-page descriptions and screenshots are provided [below](#dashboard-details).
+Click to open the live Power BI dashboard → [View the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiN2Q1MTNlOTYtNjE3YS00YWNjLWJjZWYtMTcyZDRmMTE0MTgzIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2) &nbsp;&nbsp;<a href="https://app.powerbi.com/view?r=eyJrIjoiN2Q1MTNlOTYtNjE3YS00YWNjLWJjZWYtMTcyZDRmMTE0MTgzIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2"><img src="./dashboard/dashboard_page_1_revenue.png" width="100"/></a
+Detailed page-by-page descriptions and screenshots are provided [below](#dashboard-details).
 
 ## 🛠️Project Stack
 PostgreSQL | SQL | Python (Pandas, NumPy, scikit-learn) | Jupyter Notebook | Power BI (DAX) | RFM Analysis
-
+---
 ## Table of Contents
 - [Business Objectives](#business-objectives)<br>
 - [Methodology](#methodology)<br>
@@ -44,18 +43,19 @@ PostgreSQL | SQL | Python (Pandas, NumPy, scikit-learn) | Jupyter Notebook | Pow
 This project showcases four interactive dashboard pages, each designed to track critical business metrics and deliver actionable insights. The sections below describe each page, its key visuals, and main takeaways.
 
 ###  1. Revenue Overview  
-**Snapshot**: This dashboard highlights a record-breaking 143% Year-to-Date (YTD)  revenue surge, demonstrating successful market penetration in Europe driven by high-volume customer acquisition.
-**Purpose of the Page** 🎯
-The primary goal of this dashboard is to track YTD revenue performance and compare it against the same period of the previous year. It enables stakeholders to evaluate the effectiveness of growth strategies, monitor market expansion, and identify seasonal purchasing trends to optimize financial planning.
-**What this page shows**
+![dashboard_page_1_revenue](./dashboard/dashboard_page_1_revenue.png)
+**Snapshot**: This dashboard highlights a record-breaking 143% Year-to-Date (YTD)  revenue surge, demonstrating successful market penetration in Europe driven by high-volume customer acquisition.<br>
+**Purpose of the Page** 🎯<br>
+The primary goal of this dashboard is to track YTD revenue performance and compare it against the same period of the previous year. It enables stakeholders to evaluate the effectiveness of growth strategies, monitor market expansion, and identify seasonal purchasing trends to optimize financial planning. <br>
+**What this page shows**<br>
 - YTD revenue and key KPIs with YoY comparison  
 - Monthly YTD vs prior-year revenue trend  
 - YoY Monthly Breakdown: A detailed data table providing exact figures for current vs. previous year revenue and the resulting growth variance.
-- Top revenue-generating countries
-**Top 3 Insights**💡
+- Top revenue-generating countries<br>
+**Top 3 Insights**💡<br>
 **Acquisition-Driven Growth**: Revenue has grown by 143% YTD, mainly due to a significant increase in order volume (+139.9%). Stable AOV and a low APC indicate that growth relies largely on new customer acquisition rather than repeat purchases or pricing expansion. Most customers place only one order, making growth more dependent on marketing spend and potentially limiting long-term scalability.
 **Dominant Market Share in Germany**: Germany is the primary revenue driver (€2.4M), significantly outperforming other regions, which suggests a highly successful localized market strategy.
-**Month-over-Month Dips**: Revenue dips in February and June may indicate seasonal trends or potential operational constraints.
+**Month-over-Month Dips**: Revenue dips in February and June may indicate seasonal trends or potential operational constraints.<br>
 
 ## Methodology
 ### ETL / Data Cleaning
