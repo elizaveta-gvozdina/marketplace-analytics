@@ -1,5 +1,5 @@
 # E-commerce Analytics Case Study
-
+![dashboard_page_1_revenue](./dashboard/dashboard_page_1_revenue.png)
 ## Business Context
 Fecom Inc. is a growing e-commerce marketplace connecting sellers with a broad customer base. Daily orders, shipments, and customer interactions generate substantial data, but it is stored across multiple tables without a unified view.
 
@@ -14,7 +14,8 @@ This project consolidates these datasets into a single analytical dashboard, pro
 Additionally, this project incorporates RFM-based customer segmentation with K-Means clustering to identify high-value, loyal, and at-risk customers, uncover retention opportunities, and support targeted, data-driven campaigns.
 
 ## 🚀 Interactive Dashboard
-[View the Dashboard →](https://app.powerbi.com/view?r=eyJrIjoiNWRiMGE5YzQtMzczZC00NzgwLTgyMGMtMzlhMGM3Y2I1MTkyIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2) - Click to open the live dashboard. Detailed page-by-page descriptions and screenshots are provided [below](#dashboard-details).
+Click to open the live Power BI dashboard → [View the Dashboard →](https://app.powerbi.com/view?r=eyJrIjoiN2Q1MTNlOTYtNjE3YS00YWNjLWJjZWYtMTcyZDRmMTE0MTgzIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2)
+ Detailed page-by-page descriptions and screenshots are provided [below](#dashboard-details).
 
 ## 🛠️Project Stack
 PostgreSQL | SQL | Python (Pandas, NumPy, scikit-learn) | Jupyter Notebook | Power BI (DAX) | RFM Analysis
