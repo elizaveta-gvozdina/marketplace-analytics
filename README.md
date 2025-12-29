@@ -1,58 +1,43 @@
-# E-commerce Analytics Case Study
+# ⭐ E-commerce Analytics Case Study
+🛠️Project Stack:&nbsp;&nbsp;`SQL (PostgreSQL, pgAdmin 4, joins, window functions)` | `Python (Pandas, NumPy, scikit-learn, seaborn, matplotlib)` | `Jupyter Notebook` | `Power BI (DAX)` | `RFM Analysis` | `Cohort Analysis`
+
 ## Business Context
 Fecom Inc. is a growing e-commerce marketplace connecting sellers with a broad customer base. Daily orders, shipments, and customer interactions generate substantial data, but it is stored across multiple tables without a unified view.
 
-As a result ❌:  
--  Revenue, product, and seller performance are hard to monitor  <br>
--  Customer behavior and retention patterns are difficult to analyze  <br>
--  KPIs are inconsistent, making benchmarking challenging<br>
+As a result:  
+- KPIs are inconsistent, making benchmarking challenging<br>
+- Revenue, product, and seller performance are hard to monitor<br>
+- Customer behavior and retention patterns are difficult to analyze<br>
 - Delivery and fulfillment bottlenecks are not easily detected<br>
 
-### The Objective: From Disparate Data to Strategic Clarity 🎯
-The goal of this project was to build a comprehensive analytical solution that transforms raw transactional data into a single, reliable source of insight.<br>
+## The Objective: From Disparate Data to Strategic Clarity 🎯
+
+The goal of this project was to build a comprehensive analytical solution that transforms raw transactional data into a single, reliable source of insight.
 The project focus was twofold:
 
-- **Business Performance Analysis**: Developing a unified dashboard to track YTD performance against the previous year, providing clear visibility into sales performance, top categories, top sellers, and delivery impact.
+1. **Business Performance Analysis**: Developing a unified dashboard that allows monitoring key KPIs and YTD performance against the previous year, providing clear visibility into revenue trends, top categories, top sellers, delivery impact, and cohort analysis to monitor customer behaviour and retention trends over time.
 
-- **Advanced Customer Segmentation**: Moving beyond basic metrics by applying RFM-based segmentation with K-Means clustering. This approach enabled the identification of high-value loyal customers, early detection of at-risk segments, and the discovery of data-driven retention opportunities.
+2. **Advanced Customer Segmentation**: Moving beyond basic metrics by applying RFM-based segmentation with K-Means clustering. This approach enabled the identification of high-value loyal customers, early detection of at-risk segments, and the discovery of data-driven retention opportunities.
 
-
-## Interactive Dashboard 🚀
-Click to open the live Power BI dashboard → [View the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiN2Q1MTNlOTYtNjE3YS00YWNjLWJjZWYtMTcyZDRmMTE0MTgzIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2) &nbsp;&nbsp;<a href="https://app.powerbi.com/view?r=eyJrIjoiN2Q1MTNlOTYtNjE3YS00YWNjLWJjZWYtMTcyZDRmMTE0MTgzIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2"><img src="./dashboard/dashboard_page_1_revenue.png" width="70"/><br>
-
-Detailed page-by-page descriptions and screenshots are provided [below](#dashboard-details).
-
-## Project Stack 🛠️
-`PostgreSQL` | `SQL` | `Python (Pandas, NumPy, scikit-learn)` | `Jupyter Notebook` | `Power BI (DAX)` | `RFM Analysis`
-
-# Table of Contents
-- [Business Objectives](#business-objectives)<br>
-- [Dashboard Details and Insights](#dashboard-details-and-insights)<br>
+# ⭐ Table of Contents
+- [Interactive Dashboard & Insights](#dashboard-details-and-insights)<br>
 - [Customer Segmentation with RFM and K-Means](#customer-segmentation-with-rfm-and-k-means)<br> 
-- [Methodology](#methodology)<br>
-- [Data Model](#data-model)<br>
+- [Data Engineering](#data-engineering)<br>
 - [Dataset](#dataset)<br>
 - [Limitations](#limitations)<br>
 - [Contact](#contact)<br> 
 
 ---
+<h1 id="dashboard-details-and-insights">⭐ Interactive Dashboard & Insights</h1>
 
-<h1 id="business-objectives">⭐ Business Objectives</h1>
-- Provide a clear, consolidated view of year-to-date performance, highlighting trends in revenue, customer behavior, and operational metrics  
+Click to open the interactive Power BI dashboard → 🚀[View the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMWEzOWMwZmUtZmZlYS00YzcwLWFhMjAtOGVhMGJmOGJkZGRhIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2) &nbsp;&nbsp;<a href="https://app.powerbi.com/view?r=eyJrIjoiMWEzOWMwZmUtZmZlYS00YzcwLWFhMjAtOGVhMGJmOGJkZGRhIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2"><img src="./dashboard/dashboard_page_1_revenue.png" width="70"/><br>
 
-- Monitor KPIs across revenue, retention, product assortment, seller efficiency, and delivery operations  
+Detailed page-by-page descriptions, insights, and screenshots are provided below.
 
-- Identify top-performing and underperforming products and sellers to guide assortment and partner management  
+##  1️⃣ Revenue Overview 
+*Click to interact⤵️* 
 
-- Detect bottlenecks in delivery and fulfillment to improve efficiency and customer satisfaction  
-
-- Deliver actionable insights that inform strategic initiatives with measurable impact
-
-<h1 id="dashboard-details-and-insights">⭐ Dashboard Details and Insights</h1>
-This project showcases four interactive dashboard pages, each designed to track critical business metrics and deliver actionable insights. The sections below describe each page, its key visuals, and main takeaways.
-
-##  1️⃣ Revenue Overview  
-<a href="https://app.powerbi.com/view?r=eyJrIjoiZTFjYWM1ODItYjcyZS00ODI5LWI3OWYtNDJkZjljM2MzNGNjIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiMWEzOWMwZmUtZmZlYS00YzcwLWFhMjAtOGVhMGJmOGJkZGRhIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2">
   <img src="./dashboard/dashboard_page_1_revenue.png" width="700"/>
 </a>
 
@@ -68,14 +53,16 @@ The primary goal of this dashboard is to track YTD revenue performance and compa
 - Top revenue-generating countries
 
 ### Top 3 Insights💡
-- **Acquisition-Driven Growth**: Revenue has grown by 143% YTD, mainly due to a significant increase in order volume (+139.9%). Stable AOV and a low APC indicate that growth relies largely on new customer acquisition rather than repeat purchases or pricing expansion. Most customers place only one order, making growth more dependent on marketing spend and potentially limiting long-term scalability.
+- **Acquisition-Driven Growth**: &nbsp; Revenue has grown by 143% YTD, mainly due to a significant increase in order volume (+139.9%). Stable AOV and a low APC indicate that growth relies largely on new customer acquisition rather than repeat purchases or pricing expansion. Most customers place only one order, making growth more dependent on marketing spend and potentially limiting long-term scalability.
 
-- **Dominant Market Share in Germany**: Germany is the primary revenue driver (€2.4M), significantly outperforming other regions, which suggests a highly successful localized market strategy.
+- **Dominant Market Share in Germany**: &nbsp; Germany is the primary revenue driver (€2.4M), significantly outperforming other regions, which suggests a highly successful localized market strategy.
 
-- **Month-over-Month Dips**: Revenue dips in February and June may indicate seasonal trends or potential operational constraints.
+- **Month-over-Month Dips**: &nbsp; Revenue dips in February and June may indicate seasonal trends or potential operational constraints.
 
 ##  2️⃣ Products & Sellers Performance
-<a href="https://app.powerbi.com/view?r=eyJrIjoiZTFjYWM1ODItYjcyZS00ODI5LWI3OWYtNDJkZjljM2MzNGNjIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=a7e01ff4b6d64f985152">
+*Click to interact⤵️* 
+
+<a href="https://app.powerbi.com/view?r=eyJrIjoiMWEzOWMwZmUtZmZlYS00YzcwLWFhMjAtOGVhMGJmOGJkZGRhIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=a7e01ff4b6d64f985152">
   <img src="./dashboard/dashboard_page_2_products&sellers.png" width="700"/>
 </a>
 
@@ -96,15 +83,17 @@ The goal of this page is to monitor YTD performance for sellers and products, be
 
 ### Top 3 Insights💡
 
-- **Hyper-Growth Across the Ecosystem**: Units (+141.9%), Products (+111.2%), and Sellers (+102.1%) have all more than doubled YTD, indicating rapid expansion and adoption of the platform.
+- **Hyper-Growth Across the Ecosystem**: &nbsp; Units (+141.9%), Products (+111.2%), and Sellers (+102.1%) have all more than doubled YTD, indicating rapid expansion and adoption of the platform.
 
-- **Germany Leads Revenue**: Germany contributes ~€4.7M, outperforming all other countries combined, though all top regions show positive growth YTD.
+- **Germany Leads Revenue**: &nbsp; Germany contributes ~€4.7M, outperforming all other countries combined, though all top regions show positive growth YTD.
 
-- **Exceptional Low Cancellation Rate**: The market-leading cancellation rate of 0.46% is extremely low for an e-commerce platform experiencing hyper-growth, demonstrating strong supply chain reliability and accurate inventory management across the vendor base.
+- **Exceptional Low Cancellation Rate**: &nbsp; The market-leading cancellation rate of 0.46% is extremely low for an e-commerce platform experiencing hyper-growth, demonstrating strong supply chain reliability and accurate inventory management across the vendor base.
 
 
 ## 3️⃣ Cohort Retention Analysis
-<a href="https://app.powerbi.com/view?r=eyJrIjoiZTFjYWM1ODItYjcyZS00ODI5LWI3OWYtNDJkZjljM2MzNGNjIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=a7e01ff4b6d64f985152">
+*Click to interact⤵️* 
+
+<a href="https://app.powerbi.com/view?r=eyJrIjoiMWEzOWMwZmUtZmZlYS00YzcwLWFhMjAtOGVhMGJmOGJkZGRhIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=685698e2b3b934b13415">
   <img src="./dashboard/dashboard_page_3_retention.png" width="700"/>
 </a>
 
@@ -120,22 +109,20 @@ The main goal is to track how different user cohorts behave post-acquisition, id
 - Retention % by Cohort: Heatmap showing the share of users returning in subsequent months
 - User Count by Cohort: Absolute volume of new users in each cohort, providing context for retention percentages
 
-### Top 5 Insights💡
+### Top 3 Insights💡
 
-- Extremely High Churn: 98.9% of customers churned, up +1.95 pp YoY, indicating a highly transactional model with minimal repeat purchase behavior.
+- Extremely High Churn:&nbsp; 98.9% of customers churned, up +1.95 pp YoY, indicating a highly transactional model with minimal repeat purchase behavior.
 
-- Immediate Drop-off: Month 1 retention falls below 1% across almost all cohorts, revealing weak post-purchase engagement or insufficient incentives for second purchases.
+- Immediate Drop-off:&nbsp; Month 1 retention falls below 1% across almost all cohorts, revealing weak post-purchase engagement or insufficient incentives for second purchases.
 
-- Declining Customer Satisfaction: CSAT dropped -1.58 pp to 77.4%, signaling potential friction points that may further exacerbate churn.
-
-- Revenue Per Paying User Holds: ARPPU grew +3.0% to 160.3, showing that the high-value segment remains healthy despite overall low retention.
-
-- Stable Acquisition: Monthly cohorts bring in ~6,000–7,000 new users consistently, confirming effective top-of-funnel marketing; the retention bottleneck is post-purchase.
+- Stable Acquisition:&nbsp; Monthly cohorts bring in ~6,000–7,000 new users consistently, confirming effective top-of-funnel marketing; the retention bottleneck is post-purchase.
 
 ---
 
 ## 4️⃣ Delivery Impact 
-<a href="https://app.powerbi.com/view?r=eyJrIjoiZTFjYWM1ODItYjcyZS00ODI5LWI3OWYtNDJkZjljM2MzNGNjIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=a7e01ff4b6d64f985152">
+*Click to interact⤵️* 
+
+<a href="https://app.powerbi.com/view?r=eyJrIjoiMWEzOWMwZmUtZmZlYS00YzcwLWFhMjAtOGVhMGJmOGJkZGRhIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=2991b3aa5c933a6e971a">
   <img src="./dashboard/dashboard_page_4_delivery.png" width="700"/>
 </a>
 
@@ -153,29 +140,38 @@ The goal is to monitor YTD delivery performance, identify underperforming routes
 * Customer Impact: Correlation of delivery status with average customer review scores
 * Vendor Accountability: Sellers contributing disproportionately to late deliveries
 
-### Top 5 Insights💡
+### Top 3 Insights💡
 
-* **Volume vs. Reliability Trade-off:** Order volume surged +139.9%, but LDR worsened by +4.23 pp to 7.73%, indicating delivery strain.
-* **Cross-Border Bottlenecks:** Germany-France route underperforms with 15.2% LDR, almost double other major routes (Germany-Netherlands 7.4%, Germany-Germany 5.0%).
-* **Customer Satisfaction Impact:** Late deliveries drop review scores from 4.3 stars to 2.2 stars, showing direct reputational cost.
+* **Volume vs. Reliability Trade-off:** &nbsp; Order volume surged +139.9%, but LDR worsened by +4.23 pp to 7.73%, indicating delivery strain.
+* **Cross-Border Bottlenecks:** &nbsp; Germany-France route underperforms with 15.2% LDR, almost double other major routes (Germany-Netherlands 7.4%, Germany-Germany 5.0%).
+* **Customer Satisfaction Impact:** &nbsp; Late deliveries drop review scores from 4.3 stars to 2.2 stars, showing direct reputational cost.
 
 <h1 id="customer-segmentation-with-rfm-and-k-means">⭐ Customer Segmentation with RFM and K-Means</h1>
+
 → [See detailed analysis here](./rfm_clustering_analysis/RFM_segmentation_with_KMeans.ipynb)
 
-This is part of the Fecom Inc. analytics project. Customers are segmented using RFM (Recency, Frequency, Monetary) metrics and K-Means clustering to identify patterns in purchasing behavior and support targeted marketing and retention strategies.
+Customers are segmented using RFM (Recency, Frequency, Monetary) metrics and K-Means clustering to identify patterns in purchasing behavior and support targeted marketing and retention strategies.
 
-→ [See segment-level business recommendations here](./rfm_clustering_analysis/customer_segment_recommendations_report.pdf)
+The matrix below summarises customer segments and the corresponding recommended actions to improve retention and revenue.
+→ ![Segment-level business recommendations](./rfm_clustering_analysis/RFM%20Segment%20Matrix.png)
+
 
 **Key Results: 💡**
-- Customers grouped into meaningful segments based on recency, frequency, and spending, producing a clear, stable, and business-actionable customer segmentation framework.
-- Six distinct customer segments identified: Recent Low Spenders, Recent High Spenders, Inactive Low Spenders, Inactive High Spenders, Loyal High Spenders, and VIP Spenders, enabling differentiated retention and monetization strategies.
-- **High churn risk quantified**: ~97% of customers made only one purchase, confirming low retention as a core business challenge and validating the need for lifecycle-based marketing strategies
-- **Robust clustering achieved**: 5-cluster solution validated via Elbow Method and Silhouette Score; cluster stability confirmed with a mean Adjusted Rand Index (ARI) of 0.97 across multiple runs.
-- **Outlier handling improved model quality**: Top 0.5% spenders isolated as VIPs to prevent distortion of K-Means centroids and improve interpretability.
-- **Production-ready output delivered**: Clean customer-level segmentation exported to CSV, with clear business-ready fields and structure suitable for direct integration into Power BI dashboards.
-- **Clear business actions defined**: Each segment mapped to prioritized, time-phased actions (quick wins, mid-term, long-term) with measurable KPIs to support churn reduction and CLV growth. 
 
-<h1 id="methodology">🛠️ Methodology</h1>
+- **Six distinct customer segments identified**: &nbsp; Recent Low Spenders, Recent High Spenders, Inactive Low Spenders, Inactive High Spenders, Loyal Spenders, and VIP Spenders, enabling differentiated retention and monetization strategies.
+
+- **High churn risk quantified**: &nbsp; ~97% of customers made only one purchase, confirming low retention as a core business challenge and validating the need for lifecycle-based marketing strategies
+
+- **Robust clustering achieved**: &nbsp; 5-cluster solution validated via Elbow Method and Silhouette Score; cluster stability confirmed with a mean Adjusted Rand Index (ARI) of 0.97 across multiple runs.
+
+- **Outlier handling improved model quality**: &nbsp; Top 0.5% spenders isolated as VIPs to prevent distortion of K-Means centroids and improve interpretability.
+
+- **Production-ready output delivered**: &nbsp; Clean customer-level segmentation exported to CSV, with clear business-ready fields and structure suitable for direct integration into Power BI dashboards.
+
+- **Clear business actions defined**: &nbsp; Each segment mapped to prioritized, time-phased actions (quick wins, mid-term, long-term) with measurable KPIs to support churn reduction and CLV growth. 
+
+<h1 id="data-engineering">🛠️ Data Engineering</h1>
+
 ## Data Cleaning 
 The raw data from the source datasets is cleaned using the following script:
 - [Data Preprocessing Notebook](./elt_scripts/data_preprocessing.ipynb) — checks for missing or duplicate values and corrects formatting issues.
@@ -202,18 +198,21 @@ The star-schema data model implemented in Power BI is illustrated here:
 This setup optimizes data storage in PostgreSQL while keeping analytical queries and reporting in Power BI clear, performant, and easy to maintain.
 
 <h1 id="dataset">🛠️ Dataset</h1>
+
 - Fecom Inc. is a fictional e-commerce marketplace company based in Berlin, Germany. Between 2022 and 2024, it recorded 99 441 orders from 102 727 unique customers and tracked all commercial transactions of 3 095 sellers.
 - Source: [Kaggle — Fecom Inc. e-commerce orders](https://www.kaggle.com/datasets/cemeraan/fecom-inc-e-com-marketplace-orders-data-crm/data)
 - License: CC BY-NC-SA 4.0
 - Collection Methodology: Random Sampling + Market and Company Research Report Results about e-Com[Specific confidential company]
 
 <h1 id="limitations">🛠️ Limitations</h1>
+
 - Temporal coverage is limited to 2022–2024, preventing reliable estimation of long-term trends and seasonality.
 - Returns and refunds data is not available, preventing net revenue and return rate analysis.
 - Customer acquisition and funnel data is not available, preventing analysis of conversion efficiency and customer acquisition cost (CAC) beyond completed and cancelled orders.
 - Planned sales targets or budget benchmarks are not available; performance evaluation relies on year-over-year comparisons.
 
 <h1 id="contact"> 📞Contact</h1>
+
 **Project author:**  Elizaveta Gvozdina<br>
 **Email:** lisagvozdina@gmail.com<br>
 **Phone**: +44 7874 755842<br>
