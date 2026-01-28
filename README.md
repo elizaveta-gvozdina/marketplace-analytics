@@ -160,7 +160,7 @@ The matrix below presents **the results of our RFM analysis**, summarizing each 
 <p align="center">
   <img src="./rfm_clustering_analysis/rfm_matrix.png"
        alt="Tap to view image"
-       width="600">
+       width="900">
 </p>
 
 **RFM Analysis Results: 📊**
