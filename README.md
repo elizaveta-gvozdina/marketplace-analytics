@@ -158,11 +158,10 @@ Customers are segmented using RFM (Recency, Frequency, Monetary) metrics and K-M
 The matrix below presents **the results of our RFM analysis**, summarizing each customer segment along with the recommended business actions derived from the data to improve retention and maximize revenue.
 
 <p align="center">
-  <img src="./rfm_clustering_analysis/RFM%20Segment%20Matrix.png"
-       alt="Segment-level business recommendations"
+  <img src="./rfm_clustering_analysis/rfm_matrix.png"
+       alt="Tap to view image"
        width="600">
 </p>
-
 
 **RFM Analysis Results: 📊**
 
@@ -256,4 +255,5 @@ This setup optimizes data storage in PostgreSQL while keeping analytical queries
 <h1 id="contact"> 📞Contact</h1>
 
 **Project author:**  Elizaveta Gvozdina<br>
+**LinkedIn:** [https://www.linkedin.com/in/gvozdina/](https://www.linkedin.com/in/gvozdina/)<br>
 **Email:** lisagvozdina@gmail.com<br>
