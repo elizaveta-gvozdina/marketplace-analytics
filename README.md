@@ -1,5 +1,5 @@
 # ⭐ E-commerce Analytics Case Study
-🛠️**Project Stack**:&nbsp;&nbsp;`SQL (PostgreSQL, pgAdmin 4, joins, window functions)` | `Python (Pandas, NumPy, scikit-learn, seaborn, matplotlib)` | `Jupyter Notebook` | `Power BI (DAX)` | `RFM Analysis` | `Cohort Analysis`
+🛠️**Project Stack**:&nbsp;&nbsp;`SQL (PostgreSQL, pgAdmin 4, joins, window functions)` | `Python (Pandas, NumPy, scikit-learn, seaborn, matplotlib)` | `Jupyter Notebook` | `Power BI (DAX)` | `RFM Analysis` | `Cohort Analysis` 
 
 ## Business Context
 [Fecom Inc.](https://www.kaggle.com/datasets/cemeraan/fecom-inc-e-com-marketplace-orders-data-crm/data) is a growing Berlin-based e-commerce marketplace connecting thousands of sellers with a broad customer base. Over two years, the platform processed tens of thousands of orders, generating substantial transactional data dispersed across multiple tables. This led to inconsistent KPIs, making it difficult to monitor performance, understand customer behavior, or assess delivery efficiency.
@@ -76,7 +76,7 @@ The goal of this page is to monitor YTD performance for sellers and products, be
 
 - Key volume KPIs (Units Sold, Products, Active Sellers) with YoY comparison
 - Service quality metric (Cancellation Rate) and trend
-- Interactive Filter: The "Choose Metric & Order Status" panel allows users to dynamically change the primary calculation (Revenue or Units) and the included order statuses (e.g., delivered, canceled) to gain different performance views.
+- Interactive Filter: The "Choose Metric & Order Status" panel allows users to dynamically change the primary calculation (Revenue or Units) and the included order statuses (delivered, canceled) to gain different performance views.
 - Top 5 revenue-generating countries
 - Category distribution via treemap
 - Detailed leaderboards for Top Sellers and Top Product Categories, including growth rates (PY %) and trends
@@ -157,7 +157,12 @@ Customers are segmented using RFM (Recency, Frequency, Monetary) metrics and K-M
 
 The matrix below presents **the results of our RFM analysis**, summarizing each customer segment along with the recommended business actions derived from the data to improve retention and maximize revenue.
 
- ![Segment-level business recommendations](./rfm_clustering_analysis/RFM%20Segment%20Matrix.png)
+<p align="center">
+  <img src="./rfm_clustering_analysis/RFM%20Segment%20Matrix.png"
+       alt="Segment-level business recommendations"
+       width="600">
+</p>
+
 
 **RFM Analysis Results: 📊**
 
@@ -252,5 +257,3 @@ This setup optimizes data storage in PostgreSQL while keeping analytical queries
 
 **Project author:**  Elizaveta Gvozdina<br>
 **Email:** lisagvozdina@gmail.com<br>
-**Phone**: +44 7874 755842<br>
-
