@@ -2,7 +2,7 @@
 🛠️**Project Stack**:&nbsp;&nbsp;`SQL (PostgreSQL, pgAdmin 4, joins, window functions)` | `Python (Pandas, NumPy, scikit-learn, seaborn, matplotlib)` | `Jupyter Notebook` | `Power BI (DAX)` | `RFM Analysis` | `Cohort Analysis` 
 
 ## Business Context
-[Fecom Inc.](https://www.kaggle.com/datasets/cemeraan/fecom-inc-e-com-marketplace-orders-data-crm/data) is a growing Berlin-based e-commerce marketplace connecting thousands of sellers with a broad customer base. Over two years, the platform processed tens of thousands of orders, generating substantial transactional data dispersed across multiple tables. This led to inconsistent KPIs, making it difficult to monitor performance, understand customer behavior, or assess delivery efficiency.
+[Fecom Inc.](#dataset) is a growing Berlin-based e-commerce marketplace connecting thousands of sellers with a broad customer base. Over two years, the platform processed tens of thousands of orders, generating substantial transactional data dispersed across multiple tables. This led to inconsistent KPIs, making it difficult to monitor performance, understand customer behavior, or assess delivery efficiency.
 
 ## The Objective: Turning Disparate Data into Strategic Clarity🎯
 
@@ -13,7 +13,7 @@ The project focus was twofold:
 
 2. `Advanced Customer Segmentation`: Moving beyond basic metrics by applying RFM-based segmentation with K-Means clustering. This approach enabled the identification of high-value loyal customers, early detection of at-risk segments, and the discovery of data-driven retention opportunities.
 
-# ⭐ Table of Contents
+# Table of Contents
 - [Interactive Dashboard & Insights](#dashboard-details-and-insights)<br>
 - [Customer Segmentation with RFM and K-Means](#customer-segmentation-with-rfm-and-k-means)<br> 
 - [Data Engineering: Cleaning, ELT Pipeline, Data Model](#data-engineering)<br>
@@ -21,7 +21,6 @@ The project focus was twofold:
 - [Limitations](#limitations)<br>
 - [Contact](#contact)<br> 
 
----
 <h1 id="dashboard-details-and-insights">⭐ Interactive Dashboard & Insights</h1>
 
 Click to open the interactive Power BI dashboard → 🚀[View the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMWEzOWMwZmUtZmZlYS00YzcwLWFhMjAtOGVhMGJmOGJkZGRhIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2) &nbsp;&nbsp;<a href="https://app.powerbi.com/view?r=eyJrIjoiMWEzOWMwZmUtZmZlYS00YzcwLWFhMjAtOGVhMGJmOGJkZGRhIiwidCI6IjFlYWQ2ZmY5LTIxOTItNGE2OC05ODQ2LTNiYTUwNGQ4MGViYiJ9&pageName=e2f321812e80b51cafb2"><img src="./dashboard/dashboard_page_1_revenue.png" width="70"/><br>
@@ -38,11 +37,11 @@ Detailed page-by-page descriptions, insights, and screenshots are provided below
 
 This dashboard highlights a record-breaking 143% Year-to-Date (YTD)  revenue surge, demonstrating successful market penetration in Europe driven by high-volume customer acquisition.
 
-**Purpose of the Page** 🎯
+**Purpose of the Page** 
 
 The primary goal of this dashboard is to track YTD revenue performance and compare it against the same period of the previous year. It enables stakeholders to evaluate the effectiveness of growth strategies, monitor market expansion, and identify seasonal purchasing trends to optimize financial planning. 
 
-**What this page shows** 🖼️
+**What this page shows** 
 
 - YTD revenue and key KPIs with YoY comparison  
 - Monthly YTD vs prior-year revenue trend  
@@ -68,11 +67,11 @@ The primary goal of this dashboard is to track YTD revenue performance and compa
 
 This dashboard illustrates the marketplace's supply-side health, highlighting hyper-growth in seller activity, product portfolio expansion, and revenue concentration across geographies and categories.
 
-**Purpose of the Page** 🎯
+**Purpose of the Page** 
 
 The goal of this page is to monitor YTD performance for sellers and products, benchmark it against the prior year, and support data-driven ecosystem management. Stakeholders can identify high-potential sellers, optimize category strategies, and ensure service quality remains strong during rapid scaling.
 
-**What this page shows** 🖼️
+**What this page shows** 
 
 - Key volume KPIs (Units Sold, Products, Active Sellers) with YoY comparison
 - Service quality metric (Cancellation Rate) and trend
@@ -100,11 +99,11 @@ The goal of this page is to monitor YTD performance for sellers and products, be
 
 This dashboard provides a diagnostic view of customer behavior over time, highlighting retention patterns, churn risk, and revenue per user to inform strategies that improve Customer Lifetime Value (LTV).
 
-**Purpose of the Page**🎯
+**Purpose of the Page**
 
 The main goal is to track how different user cohorts behave post-acquisition, identify retention weaknesses, and evaluate the effectiveness of engagement strategies. Stakeholders can pinpoint where the business loses customers and take targeted action to enhance loyalty and revenue sustainability.
 
-**What this page shows** 🖼️
+**What this page shows** 
 
 - KPIs: Churn Rate, ARPPU, First Order Lag, CSAT with YoY comparison
 - Retention % by Cohort: Heatmap showing the share of users returning in subsequent months
@@ -129,11 +128,11 @@ The main goal is to track how different user cohorts behave post-acquisition, id
 
 This dashboard evaluates the efficiency and reliability of the logistics network, highlighting delivery performance, and seller accountability to protect customer satisfaction and retention.
 
-**Purpose of the Page** 🎯
+**Purpose of the Page** 
 
 The goal is to monitor YTD delivery performance, identify underperforming routes or sellers, and support data-driven operational improvements. Stakeholders can pinpoint causes of delays and cancellations, optimize route planning, and maintain high customer satisfaction.
 
-**What this page shows** 🖼️
+**What this page shows** 
 
 * KPIs: Total Deliveries, ADT (Average Delivery Time), LDR (Late Delivery Ratio), ODR (On Time Delivery Ratio)
 * Delivery Stability: Boxplot of delivery times month-over-month to detect outliers
@@ -151,11 +150,17 @@ The goal is to monitor YTD delivery performance, identify underperforming routes
 
 <h1 id="customer-segmentation-with-rfm-and-k-means">⭐ Customer Segmentation with RFM and K-Means</h1>
 
-🔗[See detailed analysis here](./rfm_clustering_analysis/RFM_segmentation_with_KMeans.ipynb)
+*View the full customer analysis* ➡️ [RFM_segmentation_with_KMeans.ipynb](./rfm_clustering_analysis/RFM_segmentation_with_KMeans.ipynb)
 
-Customers are segmented using RFM (Recency, Frequency, Monetary) metrics and K-Means clustering to identify patterns in purchasing behavior and support targeted marketing and retention strategies.
+**What’s inside the notebook:**
+- SQL data extraction from PostgreSQL  
+- EDA (~100k transactions)   
+- RFM calculation and preprocessing  
+- K-Means clustering with Elbow & Silhouette methods  
+- Cluster stability validation (ARI)  
+- Customer segment interpretation and business actions 
 
-The matrix below presents **the results of our RFM analysis**, summarizing each customer segment along with the recommended business actions derived from the data to improve retention and maximize revenue.
+Customers are segmented using RFM (Recency, Frequency, Monetary) metrics and K-Means clustering to identify patterns in purchasing behavior and support targeted marketing and retention strategies. The matrix below presents **the results of our RFM analysis**, summarizing each customer segment along with the recommended business actions derived from the data to improve retention and maximize revenue.
 
 <p align="center">
   <img src="./rfm_clustering_analysis/rfm_matrix.png"
@@ -163,7 +168,7 @@ The matrix below presents **the results of our RFM analysis**, summarizing each 
        width="900">
 </p>
 
-**RFM Analysis Results: 📊**
+**RFM Analysis Results:**
 
 - `Six distinct customer segments identified:` &nbsp; Recent Low Spenders, Recent High Spenders, Inactive Low Spenders, Inactive High Spenders, Loyal Spenders, and VIP Spenders, enabling differentiated retention and monetization strategies.
 
@@ -177,10 +182,7 @@ The matrix below presents **the results of our RFM analysis**, summarizing each 
 
 - `Production-ready output delivered:` &nbsp; Clean customer-level segmentation exported to CSV, with clear business-ready fields and structure suitable for direct integration into Power BI dashboards.
 
----
-
 **Quick RFM Recommendations Summary: 💡**
-
 
 The RFM analysis highlights the importance of **building loyalty** by implementing mechanisms that encourage repeat purchases and **strengthen attachment to the platform**:
 
@@ -196,16 +198,23 @@ These actions strengthen engagement, **reduce marketing costs**, and **increase 
 
 <br>
 
+
+
 <h1 id="data-engineering">🛠️ Data Engineering</h1>
 
 This section outlines the engineering work behind the data, including its preparation, transformation, and modelling, ensuring it is reliable, well-structured, and ready for analysis and reporting.
 
 ## Data Cleaning 
-The raw data from the source datasets is cleaned using the following script:
-- 🔗[Data Preprocessing Notebook](./elt_scripts/data_preprocessing.ipynb) - checks for missing or duplicate values and corrects formatting issues.
+The raw data from the source datasets is cleaned using the following notebook: ➡️[Data Preprocessing Notebook](./elt_scripts/data_preprocessing.ipynb) 
+
+**What’s inside:**
+- Dataset structure review and data quality validation (missing values, duplicates, key integrity)
+- Data cleaning and standardisation (formatting, encoding)
+- Distribution analysis of key metrics to inform dashboard design
+- Preparation and export of cleaned data for PostgreSQL
 
 ## ELT 
-The data is ingested, normalized, and loaded into PostgreSQL using a **Python** 🔗[ELT Pipeline](./elt_scripts/ELT_pipeline.py), which executes the 🔗[SQL scripts](./sql_scripts/):
+The data is ingested, normalized, and loaded into PostgreSQL using a **Python** ➡️[ELT Pipeline](./elt_scripts/ELT_pipeline.py), which executes the ➡️[SQL scripts](./sql_scripts/):
 
 - `create_db.sql:` defines the database schema, tables, constraints, and **indexes** on PKs, FKs, and temporal columns (**DDL**)
 
@@ -229,21 +238,34 @@ The project uses different data models across layers to balance storage efficien
      A star schema with multiple fact tables at different grains is implemented to simplify relationships, filtering, and measure calculations. Power BI uses the VertiPaq engine, which stores data in a highly compressed, columnar format. This makes star schemas with clear fact-dimension relationships extremely fast for aggregations and slicers.
 
 The Entity-Relationship Diagram (ERD) of the PostgreSQL database can be viewed below:  
-🔗 [PostgreSQL ERD](./ERD/ERD_normalized.png)  
+➡️ [PostgreSQL ERD](./ERD/ERD_normalized.png)  
 
 The star-schema data model implemented in Power BI is illustrated here:  
-🔗 [Power BI Star Schema](./ERD/powerbi_model.png)
+➡️ [Power BI Star Schema](./ERD/powerbi_model.png)
 
 This setup optimizes data storage in PostgreSQL while keeping analytical queries and reporting in Power BI clear, performant, and easy to maintain.
 
----
+<br>
+
 
 <h1 id="dataset">🛠️ Dataset</h1>
 
-- Fecom Inc. is a fictional e-commerce marketplace company based in Berlin, Germany. Between 2022 and 2024, it recorded 99 441 orders from 102 727 unique customers and tracked all commercial transactions of 3 095 sellers.
+- Fecom Inc. is a e-commerce marketplace company based in Berlin, Germany. Between 2022 and 2024, it recorded 99 441 orders from 102 727 unique customers and tracked all commercial transactions of 3 095 sellers.
 - Source: [Kaggle - Fecom Inc. e-commerce orders](https://www.kaggle.com/datasets/cemeraan/fecom-inc-e-com-marketplace-orders-data-crm/data)
 - License: CC BY-NC-SA 4.0
 - Collection Methodology: Random Sampling + Market and Company Research Report Results about e-Com[Specific confidential company]
+- The project integrates [8 relational tables](./data/raw) covering the full e-commerce workflow:
+
+| Source table | Description |
+|-------------|-------------|
+| Fecom Inc Geolocations | Geographic reference data (postal code, city, country, coordinates) used by customers and sellers |
+| Fecom Inc Customer List | Customer identifiers, subscription details, demographics |
+| Fecom Inc Sellers List | Seller information linked to geolocation |
+| Fecom Inc Products | Product attributes and physical characteristics |
+| Fecom Inc Orders | Order-level data, status, and lifecycle timestamps |
+| Fecom Inc Order Items | Product-level details for each order (price, freight, seller, product) |
+| Fecom Inc Order Payments | Payment details and transaction values |
+| Fecom_Inc_Order_Reviews_No_Emojis | Customer ratings and review information |
 
 <h1 id="limitations">🛠️ Limitations</h1>
 
