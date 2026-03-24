@@ -1,4 +1,4 @@
-# ⭐ E-commerce Analytics Case Study
+# E-commerce Analytics Case Study
 🛠️**Project Stack**:&nbsp;&nbsp;`SQL (PostgreSQL, pgAdmin 4, joins, window functions)` | `Python (Pandas, NumPy, scikit-learn, seaborn, matplotlib)` | `Jupyter Notebook` | `Power BI (DAX)` | `RFM Analysis` | `Cohort Analysis` 
 
 ## Business Context
@@ -15,7 +15,7 @@ The project focus was twofold:
 
 # Table of Contents
 - [Interactive Dashboard & Insights](#dashboard-details-and-insights)<br>
-- [Customer Segmentation with RFM and K-Means](#customer-segmentation-with-rfm-and-k-means)<br> 
+- [RFM Customer Segmentation & Retention Strategy](#customer-segmentation-with-rfm-and-k-means)<br> 
 - [Data Engineering: Cleaning, ELT Pipeline, Data Model](#data-engineering)<br>
 - [Dataset](#dataset)<br>
 - [Limitations](#limitations)<br>
@@ -82,11 +82,11 @@ The goal of this page is to monitor YTD performance for sellers and products, be
 
 **Top 3 Insights**💡
 
+- `Long-Lifespan Product Categories Driving Value`: &nbsp; The platform features durable, high-value items (e.g., Housewares, Furniture & Decor) that contribute significantly to overall revenue. Their longer purchase cycles mean repurchases are infrequent, which can limit short-term retention, highlighting the need for targeted engagement to maintain customer loyalty.
+
 - `Hyper-Growth Across the Ecosystem:` &nbsp; Units (+141.9%), Products (+111.2%), and Sellers (+102.1%) have all more than doubled YTD, indicating rapid expansion and adoption of the platform.
 
 - `Germany Leads Revenue:` &nbsp; Sellers based in Germany contribute ~€4.7M, outperforming all other seller countries combined, though all top regions show positive growth YTD
-
-- `Long-Lifespan Product Categories Driving Value`: &nbsp; The platform features durable, high-value items (e.g., Housewares, Furniture & Decor) that contribute significantly to overall revenue. Their longer purchase cycles mean repurchases are infrequent, which can limit short-term retention, highlighting the need for targeted engagement to maintain customer loyalty.
 
 <br>
 
@@ -148,7 +148,7 @@ The goal is to monitor YTD delivery performance, identify underperforming routes
 
 <br>
 
-<h1 id="customer-segmentation-with-rfm-and-k-means">⭐ Customer Segmentation with RFM and K-Means</h1>
+<h1 id="customer-segmentation-with-rfm-and-k-means">⭐ Customer Segmentation with RFM and K-Means & Retention Strategy</h1>
 
 *View the full customer analysis* ➡️ [RFM_segmentation_with_KMeans.ipynb](./rfm_clustering_analysis/RFM_segmentation_with_KMeans.ipynb)
 
